@@ -8,6 +8,20 @@
   --clr-light: 231 77% 90%;
   --clr-white: 0 0% 100%;
 
+  /* font-sizes */
+  --fs-900: 9.375rem;
+  --fs-800: 6.25rem;
+  --fs-700: 3.5rem;
+  --fs-600: 2rem;
+  --fs-500: 1.75rem;
+  --fs-400: 1.125rem;
+  --fs-300: 1rem;
+  --fs-200: 0.875rem;
+
+  /* font-families */
+  --ff-serif: "Bellefair", serif;
+  --ff-sans-cond: "Barlow Condensed", sans-serif;
+  --ff-sans-normal: "Barlow", sans-serif;
 }
 
 /* ----------------- */
@@ -22,14 +36,14 @@
 /* reset margins */
 body, h1, h2, h3, h4, h5, p, figure, img, picture {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    font-weight: 400;
 }
 
 /* list reset */
-ul[role='list'],
-ol[role='list'] {
+ul[role='list'], ol[role='list'] {
   list-style: none;
 }
 
@@ -40,6 +54,10 @@ html:focus-within {
 
 /* Set core body defaults */
 body {
+  font-family: var(--ff-sans-normal);
+  font-size: var(--fs-400);
+  color: hsl( var(--clr-white) );
+  background-color: hsl( var(--clr-dark) );
   min-height: 100vh;
   text-rendering: optimizeSpeed;
   line-height: 1.5;
@@ -51,17 +69,13 @@ a:not([class]) {
 }
 
 /* Make images easier to work with */
-img,
-picture {
+img, picture {
   max-width: 100%;
   display: block;
 }
 
 /* Inherit fonts for inputs and buttons */
-input,
-button,
-textarea,
-select {
+input, button, textarea, select {
   font: inherit;
 }
 
@@ -71,20 +85,12 @@ select {
    scroll-behavior: auto;
   }
   
-  *,
-  *::before,
-  *::after {
+  *, *::before, *::after {
     animation-duration: 0.01ms !important;
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
   }
-}
-
-/* code reset */
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
 }
 
 /* ----------------- */
@@ -128,3 +134,29 @@ code {
 .text-dark { color: hsl( var(--clr-dark) );}
 .text-accent { color: hsl( var(--clr-light) );}
 .text-white { color: hsl( var(--clr-white) );}
+
+/* typography */
+
+.ff-serif { font-family: var(--ff-serif); } 
+.ff-sans-cond { font-family: var(--ff-sans-cond); } 
+.ff-sans-normal { font-family: var(--ff-sans-normal); } 
+
+.letter-spacing-1 { letter-spacing: 4.75px; } 
+.letter-spacing-2 { letter-spacing: 2.7px; } 
+.letter-spacing-3 { letter-spacing: 2.35px; } 
+
+.uppercase { text-transform: uppercase; }
+
+.fs-900 { font-size: var(--fs-900); }
+.fs-800 { font-size: var(--fs-800); }
+.fs-700 { font-size: var(--fs-700); }
+.fs-600 { font-size: var(--fs-600); }
+.fs-500 { font-size: var(--fs-500); }
+.fs-400 { font-size: var(--fs-400); }
+.fs-300 { font-size: var(--fs-300); }
+.fs-200 { font-size: var(--fs-200); }
+
+
+.fs-900, .fs-800, .fs-700, .fs-600 {
+    line-height: 1.1;
+}
