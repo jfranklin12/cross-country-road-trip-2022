@@ -1,11 +1,17 @@
 import './navbar.css'
-import logo from "../../images/logo.jpg"
+import logo from "../../images/logo.png"
+
+const styles = {
+    image: {
+        borderRadius: '50%',
+    }
+}
 
 function Navbar() {
     return (
         <div className='primary-header flex'>
             <div>
-                <img alt='logo' src={logo} />
+                <img alt='logo' src={logo} style={styles.image}/>
             </div>
             <div>
                 <ul className="primary-navigation underline-indicators flex">

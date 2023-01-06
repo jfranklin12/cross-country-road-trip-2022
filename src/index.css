@@ -61,6 +61,8 @@ body {
   min-height: 100vh;
   text-rendering: optimizeSpeed;
   line-height: 1.5;
+  display: grid;
+  grid-template-rows: min-content 1fr;
 }
 
 /* A elements that don't have a class get default styles */
@@ -119,6 +121,27 @@ input, button, textarea, select {
   margin-inline: auto;
 }
 
+.grid-container {
+  border: 5px solid limegreen;
+  display: grid;
+}
+
+@media (min-width: 45rem) {
+  .grid-container {
+      column-gap: var(--container-gap, 2rem);
+      grid-template-columns: minmax(2rem, 1fr) repeat(2, minmax(0, 30rem)) minmax(2rem, 1fr);
+  }
+
+.grid-container > *:first-child {
+  grid-column: 2;
+  border: 5px solid red;
+}
+
+.grid-container > *:last-child {
+  grid-column: 3;
+  border: 5px solid yellow;
+}
+}
 .sr-only {
   position: absolute;
   width: 1px;
