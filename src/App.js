@@ -5,7 +5,7 @@ import Footer from './components/Footer';
 
 function App() {
   return (
-    <div className='container flow'>
+    <div>
       <Navbar />
       <Homepage />
       <Footer />
