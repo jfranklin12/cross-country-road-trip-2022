@@ -31,3 +31,9 @@
     opacity: 1;
     transform: scale(1.5);
 }
+
+@media (min-width: 48em) {
+.align-right {
+    justify-self: right;
+}
+}

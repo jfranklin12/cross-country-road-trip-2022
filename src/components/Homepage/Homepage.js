@@ -9,7 +9,7 @@ function Homepage() {
       to
       <span className='d-block fs-900 ff-serif text-white'>Santa Barbara</span></h1>
       </div>
-      <div>
+      <div className='align-right'>
       <a href="#" className="large-button uppercase ff-serif text-dark bg-white">Travel</a>
       </div>
     </div>
