@@ -24,9 +24,11 @@ function App() {
 
   return (
     <div style={{backgroundImage: `url(${backgroundImage})`, backgroundPosition: `bottom center`, backgroundSize: `cover`}}>
+      <div>
       <Navbar />
       <Homepage />
       <Footer />
+      </div>
     </div>
   );
 }
