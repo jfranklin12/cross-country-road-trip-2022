@@ -168,7 +168,7 @@ input, button, textarea, select {
 }
 
 .grid-container--home {
-  padding-bottom: max(6rem, 22vh);
+  padding-bottom: max(6rem, 20vh);
   align-items: end;
 }
 }
@@ -243,4 +243,9 @@ input, button, textarea, select {
 
 .underline-indicators > .active {
   border-color: hsl( var(--clr-white) / 1 )
+}
+
+/* background */
+@media (max-width: 38em) {
+  
 }
