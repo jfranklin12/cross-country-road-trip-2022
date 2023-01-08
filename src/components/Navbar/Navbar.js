@@ -1,5 +1,6 @@
-import './navbar.css'
-import logo from "../../images/logo.png"
+import './navbar.css';
+import logo from "../../images/logo.png";
+import { useState } from 'react';
 
 const styles = {
     image: {
@@ -8,19 +9,31 @@ const styles = {
 }
 
 function Navbar() {
+    const [showNavbar, setShowNavbar] = useState(false)
+
+    const handleShowNavbar = () => {
+        setShowNavbar(!showNavbar)
+    }
+
+
     return (
         <div className='primary-header flex'>
+            {/* logo */}
             <div>
-                <img alt='logo' src={logo} style={styles.image}/>
+                <img alt='logo' src={logo} style={styles.image} />
             </div>
-            <div>
+            {/* hamburger */}
+            {/* add sr-only to navbar? */}
+            <button><span className='menu-icon' onClick={handleShowNavbar}>Menu</span></button>
+            {/* navigation links */}
+            <nav className={`${showNavbar && 'active'}`}>
                 <ul className="primary-navigation underline-indicators flex">
-                    <li className="active"><a className="ff-sans-cond uppercase text-white letter-spacing-2" href="#">Map</a></li>
-                    <li><a className="ff-sans-cond uppercase text-white letter-spacing-2" href="#">Destinations</a></li>
-                    <li><a className="ff-sans-cond uppercase text-white letter-spacing-2" href="#">Gallery</a></li>
-                    <li><a className="ff-sans-cond uppercase text-white letter-spacing-2" href="#">What's Next?</a></li>
+                    <li><a className="ff-sans-cond uppercase text-white letter-spacing-2" href="/map">Map</a></li>
+                    <li><a className="ff-sans-cond uppercase text-white letter-spacing-2" href="/destinations">Destinations</a></li>
+                    <li><a className="ff-sans-cond uppercase text-white letter-spacing-2" href="/gallery">Gallery</a></li>
+                    <li><a className="ff-sans-cond uppercase text-white letter-spacing-2" href="/more-trips">More Trips</a></li>
                 </ul>
-            </div>
+            </nav>
         </div>
     );
 }

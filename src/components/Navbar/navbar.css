@@ -1,12 +1,34 @@
 /* Navbar */
 .primary-navigation {
-    --gap: 8rem;
     --underline-gap: 2rem;
     list-style: none;
     padding: 0;
     margin: 0;
 }
 
+@media (max-width: 35rem) {
+.primary-navigation {
+    --underline-gap: .5rem;
+    position: fixed;
+    z-index: 1000;
+    inset: 0 0 0 30%;
+    background: grey;
+    list-style: none;
+    padding: min(20rem, 10vh) 2rem;
+    margin: 0;
+    flex-direction: column;
+}
+
+.primary-navigation.underline-indicators > .active {
+    border: 0;
+}
+}
+
 .primary-navigation a {
     text-decoration: none;
 }
+
+.menu-icon {
+   display: none;
+}
+
