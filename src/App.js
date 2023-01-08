@@ -24,13 +24,12 @@ function App() {
     }, []);  
 
   return (
-    <BrowserRouter>
     <div style={{backgroundImage: `url(${backgroundImage})`, backgroundPosition: `bottom center`, backgroundSize: `cover`}}>
       <Navbar />
       <Homepage />
       <Footer />
     </div>
-    </BrowserRouter>
+
   );
 }
 

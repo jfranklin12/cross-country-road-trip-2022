@@ -1,5 +1,9 @@
 /* Navbar */
-.primary-navigation {
+/* .primary-header {
+    position: relative;
+} */
+
+.primary-navigation, .primary-navigation ul{
     --underline-gap: 2rem;
     list-style: none;
     padding: 0;
@@ -10,7 +14,11 @@
 .menu-icon {
     display: block !important;
 }
-.primary-navigation.mobile ul{
+
+.primary-navigation ul {
+    display: none;
+}
+.primary-navigation.mobile, .primary-navigation.mobile ul{
     --underline-gap: .5rem;
     position: fixed;
     z-index: 1000;
@@ -21,18 +29,25 @@
     margin: 0;
     flex-direction: column;
     transition: all 0.3s ease-in;
+    display: block;
 }
 
 .primary-navigation.underline-indicators > .active {
     border: 0;
 }
+
 }
 
-.primary-navigation a {
+.primary-navigation li a {
     text-decoration: none;
+    /* display: block; */
 }
 
 .menu-icon {
+    /* position: absolute; */
+  /* top: 50%; */
+  /* right: 25px; */
+  /* transform: translateY(-50%); */
    display: none;
 }
 
