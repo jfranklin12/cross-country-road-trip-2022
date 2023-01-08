@@ -5,6 +5,7 @@ import Homepage from './components/Homepage/Homepage';
 import Footer from './components/Footer';
 import backgroundDesktop from './images/background-grand-canyon.JPEG';
 import backgroundMobile from './images/background-mobile.JPEG';
+import { BrowserRouter } from 'react-router-dom';
 
 function App() {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
@@ -23,13 +24,13 @@ function App() {
     }, []);  
 
   return (
+    <BrowserRouter>
     <div style={{backgroundImage: `url(${backgroundImage})`, backgroundPosition: `bottom center`, backgroundSize: `cover`}}>
-      <div>
       <Navbar />
       <Homepage />
       <Footer />
-      </div>
     </div>
+    </BrowserRouter>
   );
 }
 

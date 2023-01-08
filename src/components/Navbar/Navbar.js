@@ -1,6 +1,8 @@
 import './navbar.css';
 import logo from "../../images/logo.png";
 import { useState } from 'react';
+import { NavLink } from 'react-router-dom';
+
 
 const styles = {
     image: {
@@ -11,10 +13,6 @@ const styles = {
 function Navbar() {
     const [showNavbar, setShowNavbar] = useState(false)
 
-    const handleShowNavbar = () => {
-        setShowNavbar(!showNavbar)
-    }
-
 
     return (
         <div className='primary-header flex'>
@@ -24,16 +22,24 @@ function Navbar() {
             </div>
             {/* hamburger */}
             {/* add sr-only to navbar? */}
-            <button><span className='menu-icon' onClick={handleShowNavbar}>Menu</span></button>
+            <button><span className='menu-icon' onClick={() => {setShowNavbar(!showNavbar)}}>Menu</span></button>
             {/* navigation links */}
-            <nav className={`${showNavbar && 'active'}`}>
+            <div className={showNavbar ? "primary-navigation.mobile" : "primary-navigation"}>
                 <ul className="primary-navigation underline-indicators flex">
-                    <li><a className="ff-sans-cond uppercase text-white letter-spacing-2" href="/map">Map</a></li>
-                    <li><a className="ff-sans-cond uppercase text-white letter-spacing-2" href="/destinations">Destinations</a></li>
-                    <li><a className="ff-sans-cond uppercase text-white letter-spacing-2" href="/gallery">Gallery</a></li>
-                    <li><a className="ff-sans-cond uppercase text-white letter-spacing-2" href="/more-trips">More Trips</a></li>
+                    <li>
+                        <a className="ff-sans-cond uppercase text-white letter-spacing-2" href="/map">Map</a>
+                    </li>
+                    <li>
+                        <a className="ff-sans-cond uppercase text-white letter-spacing-2" href="/destinations">Destinations</a>
+                    </li>
+                    <li>
+                        <a className="ff-sans-cond uppercase text-white letter-spacing-2" href="/gallery">Gallery</a>
+                    </li>
+                    <li>
+                        <a className="ff-sans-cond uppercase text-white letter-spacing-2" href="/more-trips">More Trips</a>
+                    </li>
                 </ul>
-            </nav>
+            </div>
         </div>
     );
 }

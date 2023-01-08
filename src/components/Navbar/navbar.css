@@ -7,7 +7,10 @@
 }
 
 @media (max-width: 35rem) {
-.primary-navigation {
+.menu-icon {
+    display: block !important;
+}
+.primary-navigation.mobile ul{
     --underline-gap: .5rem;
     position: fixed;
     z-index: 1000;
@@ -17,6 +20,7 @@
     padding: min(20rem, 10vh) 2rem;
     margin: 0;
     flex-direction: column;
+    transition: all 0.3s ease-in;
 }
 
 .primary-navigation.underline-indicators > .active {
