@@ -1,8 +1,6 @@
 import './navbar.css';
 import logo from "../../images/logo.png";
 import { useState } from 'react';
-import { NavLink } from 'react-router-dom';
-
 
 const styles = {
     image: {
