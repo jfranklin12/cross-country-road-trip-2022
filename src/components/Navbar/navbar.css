@@ -11,6 +11,10 @@
     list-style: none;
 }
 
+.menu-icon {
+    display: none;
+ }
+
 @supports (backdrop-filter: blur(1rem)) {
     .primary-navigation {
         background-color: hsl( var(--clr-white)/ .05);
@@ -19,24 +23,41 @@
 }
 
 @media (max-width: 35rem) {
-.menu-icon {
-    display: block !important;
-}
-
-.primary-navigation ul {
-    display: none;
-}
 .primary-navigation.mobile{
     --underline-gap: .5rem;
     position: fixed;
-    z-index: 1000;
+    z-index: 200;
     inset: 0 0 0 30%;
     list-style: none;
     padding: min(20rem, 15vh) 1rem;
     margin: 0;
     flex-direction: column;
     transition: all 0.3s ease-in;
+    }
+
+.menu-icon{
+    display: block;
+    position: fixed;
+    right: 1rem;
+    top: 1rem;
+    z-index: 300;
+    background: transparent;
+    border: 0;
+    place-items: right;
+    margin: 0;
 }
+.menu-icon svg {
+    color:hsl( var(--clr-white));
+    width: 2.5rem;
+    height: 2.5rem;
+
+}
+
+
+.primary-navigation ul {
+    display: none;
+}
+
 .primary-navigation.mobile ul {
     display: block;
 }
@@ -51,7 +72,5 @@
     text-decoration: none;
 }
 
-.menu-icon {
-   display: none;
-}
+
 

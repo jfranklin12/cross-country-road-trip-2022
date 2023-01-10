@@ -90,13 +90,13 @@ a:not([class]) {
 }
 
 /* Make images easier to work with */
-img, picture {
+img, picture, svg {
   max-width: 100%;
   display: block;
 }
 
 /* Inherit fonts for inputs and buttons */
-input, button, textarea, select {
+input, button, textarea, select, svg {
   font: inherit;
 }
 

@@ -1,11 +1,12 @@
 import './navbar.css';
 import logo from "../../images/logo.png";
 import { useState } from 'react';
+import { FiMenu } from 'react-icons/fi'
 
 const styles = {
     image: {
         borderRadius: '50%',
-    }
+    },
 }
 
 function Navbar() {
@@ -18,9 +19,9 @@ function Navbar() {
             <div>
                 <img alt='logo' src={logo} style={styles.image} />
             </div>
-            {/* hamburger */}
-            {/* add sr-only to navbar? */}
-            <button className='menu-icon' onClick={() => {setShowNavbar(!showNavbar)}}>Menu</button>
+            <button className='menu-icon' onClick={() => {setShowNavbar(!showNavbar)}}>
+                <FiMenu />
+            </button>
             {/* navigation links */}
             <div className={showNavbar ? "primary-navigation mobile" : "primary-navigation"}>
                 <ul className="underline-indicators flex">
