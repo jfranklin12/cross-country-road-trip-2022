@@ -1,7 +1,8 @@
 import './navbar.css';
 import logo from "../../images/logo.png";
 import { useState } from 'react';
-import { FiMenu } from 'react-icons/fi'
+import { FiMenu, FiX } from 'react-icons/fi';
+
 
 const styles = {
     image: {
@@ -19,8 +20,8 @@ function Navbar() {
             <div>
                 <img alt='logo' src={logo} style={styles.image} />
             </div>
-            <button className='menu-icon' onClick={() => {setShowNavbar(!showNavbar)}}>
-                <FiMenu />
+            <button className='menu-icon' onClick={() => {setShowNavbar(!showNavbar)}}>{showNavbar ? <FiX /> : <FiMenu />}
+                <span className='sr-only'>Menu</span>
             </button>
             {/* navigation links */}
             <div className={showNavbar ? "primary-navigation mobile" : "primary-navigation"}>
