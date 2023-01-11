@@ -14,7 +14,7 @@ function Navbar() {
 
 
     return (
-        <nav className='primary-header flex'>
+        <div className='primary-header flex'>
             {/* logo */}
             <div>
                 <img alt='logo' src={logo} style={styles.image} />
@@ -39,7 +39,7 @@ function Navbar() {
                     </li>
                 </ul>
             </div>
-        </nav>
+        </div>
     );
 }
 

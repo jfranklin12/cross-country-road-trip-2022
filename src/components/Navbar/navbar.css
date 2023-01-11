@@ -37,20 +37,19 @@
 
 .menu-icon{
     display: block;
-    position: fixed;
+    position: absolute;
     right: 1rem;
     top: 1rem;
     z-index: 300;
     background: transparent;
     border: 0;
-    place-items: right;
     margin: 0;
+    /* overflow: hidden; */
 }
 .menu-icon svg {
     color:hsl( var(--clr-white));
     width: 2.5rem;
-    height: 2.5rem;
-
+    height: 2.5rem
 }
 
 
