@@ -7,6 +7,7 @@ import { FiMenu, FiX } from 'react-icons/fi';
 const styles = {
     image: {
         borderRadius: '50%',
+        margin: `1.5rem clamp(1.5rem, 5vw, 3.5rem)`,
     },
 }
 
