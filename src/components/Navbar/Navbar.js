@@ -19,9 +19,9 @@ function Navbar() {
     return (
         <div className='primary-header flex'>
             {/* logo */}
-            <div>
+            <a href="/">
                 <img alt='logo' src={logo} style={styles.image} />
-            </div>
+            </a>
             <button className='menu-icon' onClick={() => {setShowNavbar(!showNavbar)}}>{showNavbar ? <FiX /> : <FiMenu />}
                 <span className='sr-only'>Menu</span>
             </button>
