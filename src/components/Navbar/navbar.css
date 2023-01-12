@@ -11,7 +11,7 @@
     margin: 1rem 0rem;
     background: hsl( var(--clr-dark)/ .7);
     border-radius: 4rem 0rem 0rem 4rem;
-    padding-inline: 2rem;
+    padding-inline: clamp(2rem, 4vw, 10rem);
 }
 
 .primary-navigation ul {
@@ -30,8 +30,8 @@
 
 @supports (backdrop-filter: blur(1rem)) {
     .primary-navigation {
-        background-color: hsl( var(--clr-white)/ .05);
-        backdrop-filter: blur(1.5rem);
+        background-color: hsl( var(--clr-white)/ .15);
+        backdrop-filter: blur(4rem);
     }
 }
 
@@ -93,4 +93,26 @@
     }
 }
 
+@media (min-width: 48em) {
+    
+     .primary-header::after {
+         content: '';
+         display: block;
+         position: relative;
+         height: 1px;
+         margin-left: 3rem;
+         margin-right: -3.5rem;
+         background: hsl( var(--clr-white) / .35);
+         width: 100%;
+         order: 1;
+     }
 
+     nav {
+        order: 2;
+     }
+    
+    .primary-navigation {
+        margin-block: 2rem;
+    }
+    
+}

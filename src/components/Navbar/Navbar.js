@@ -8,6 +8,7 @@ const styles = {
     image: {
         borderRadius: '50%',
         margin: `1.5rem clamp(1.5rem, 5vw, 3.5rem)`,
+        order: 3,
     },
 }
 
@@ -25,7 +26,7 @@ function Navbar() {
                 <span className='sr-only'>Menu</span>
             </button>
             {/* navigation links */}
-            <div className={showNavbar ? "primary-navigation mobile" : "primary-navigation"}>
+            <nav className={showNavbar ? "primary-navigation mobile" : "primary-navigation"}>
                 <ul className="underline-indicators flex">
                     <li>
                         <a className="ff-sans-cond uppercase text-white letter-spacing-2" href="/map">Map</a>
@@ -37,10 +38,10 @@ function Navbar() {
                         <a className="ff-sans-cond uppercase text-white letter-spacing-2" href="/gallery">Gallery</a>
                     </li>
                     <li>
-                        <a className="ff-sans-cond uppercase text-white letter-spacing-2" href="/more-trips">More Trips</a>
+                        <a className="ff-sans-cond uppercase text-white letter-spacing-2" href="/more-trips">Travel</a>
                     </li>
                 </ul>
-            </div>
+            </nav>
         </div>
     );
 }
