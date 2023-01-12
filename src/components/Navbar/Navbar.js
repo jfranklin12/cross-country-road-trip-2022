@@ -29,7 +29,7 @@ function Navbar() {
             <nav className={showNavbar ? "primary-navigation mobile" : "primary-navigation"}>
                 <ul className="underline-indicators flex">
                     <li>
-                        <a className="ff-sans-cond uppercase text-white letter-spacing-2" href="/map">Map</a>
+                        <a className="ff-sans-cond uppercase text-white letter-spacing-2" href="/travel">travel</a>
                     </li>
                     <li>
                         <a className="ff-sans-cond uppercase text-white letter-spacing-2" href="/destinations">Destinations</a>
@@ -38,7 +38,7 @@ function Navbar() {
                         <a className="ff-sans-cond uppercase text-white letter-spacing-2" href="/gallery">Gallery</a>
                     </li>
                     <li>
-                        <a className="ff-sans-cond uppercase text-white letter-spacing-2" href="/more-trips">Travel</a>
+                        <a className="ff-sans-cond uppercase text-white letter-spacing-2" href="/more">more</a>
                     </li>
                 </ul>
             </nav>

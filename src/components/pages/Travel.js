@@ -1,5 +1,9 @@
 function Travel() {
-<h1>Travel</h1>
+    return (
+        <div>
+            <h1>Travel</h1>
+        </div>
+    );
 };
 
 export default Travel;
