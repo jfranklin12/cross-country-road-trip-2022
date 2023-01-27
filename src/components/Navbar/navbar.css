@@ -84,6 +84,13 @@
 
 }
 
+@media (max-width: 26rem){
+    .menu-icon{
+        position: sticky;
+        left: 22rem;
+        top: 2rem;
+    }
+}
 @media (max-width: 45rem) {
     .primary-navigation {
         padding-inline: .5rem;
