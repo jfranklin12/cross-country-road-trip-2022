@@ -1,4 +1,5 @@
 import { MapContainer, TileLayer, useMap, Marker, Popup } from 'react-leaflet';
+import { TypeAnimation } from 'react-type-animation';
 import './travel.css';
 
 function Travel() {
@@ -10,6 +11,33 @@ function Travel() {
                 <h1 className='text-accent fs-500 ff-sans-cond uppercase letter-spacing-1'>We started in
                 <span className='d-block fs-900 ff-serif text-white'>Atlanta, GA </span>
                 and traveled to
+                <TypeAnimation 
+                    sequence={[
+                        'Birmingham, AL',
+                        1000,
+                        'Tunica, MS',
+                        1000,
+                        'Hot Springs, AR',
+                        1000,
+                        'Chickasaw National Park',
+                        1000,
+                        'Oklahoma City, OK',
+                        1000,
+                        'Albuquerque, NM',
+                        1000,
+                        'The Grand Canyon',
+                        1000,
+                        'The Hoover Dam',
+                        1000,
+                        'Las Vegas, NV',
+                        1000,
+                        'Santa Barbara, CA',
+                        1000,
+                    ]}
+                    wrapper="span"
+                    cursor={false}
+                    repeat={Infinity}
+                    className='d-block fs-900 ff-serif text-white'                />
                 {/* <span className='d-block fs-900 ff-serif text-white'>Tunica, MS </span>
                 <span className='d-block fs-900 ff-serif text-white'>Durrant, OK </span>
                 <span className='d-block fs-900 ff-serif text-white'>Amarillo, TX </span>
