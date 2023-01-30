@@ -6,11 +6,11 @@ import locations from '../../data/locations';
 function Travel() {
 
     const position = [33.753746, -84.386330];
-    console.log(locations);
+    console.log(locations)
 
     return (
         <div className='container'>
-            
+
             {/* Visited Places Section */}
             <div className='container-grid container-travel'>
                 <div>
@@ -18,8 +18,9 @@ function Travel() {
                         <span className='d-block fs-900 ff-serif text-white travel-text'>Atlanta, GA </span>
                         and traveled </h1>
                 </div>
+                {/* Traveled States Loop */}
                 <div>
-                    
+
                     <TypeAnimation
                         sequence={[
                             'to Alabama',
@@ -50,13 +51,21 @@ function Travel() {
             {/* Map container */}
             <div className='container'>
                 <MapContainer id="map" center={position} zoom={5} scrollWheelZoom={false}>
+
                     <TileLayer attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
                         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
-                    <Marker position={position}>
-                        <Popup>
-                            A pretty CSS3 popup. <br /> Easily customizable.
-                        </Popup>
-                    </Marker>
+
+                    {locations.map(( {id, placeName, date, location}) => {
+                        return (
+                            <Marker key={id} position={[location.lat, location.lng]}>
+                                <Popup>
+                                    A pretty CSS3 popup. <br /> Easily customizable.
+                                </Popup>
+                            </Marker>
+                        )
+                    })
+                    }
+
                 </MapContainer>
             </div>
         </div>
