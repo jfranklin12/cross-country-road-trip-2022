@@ -8,10 +8,10 @@ function Travel() {
     return (
         <div className='container'>
             {/* Visited Places Section */}
-            <div className='container'>
+            <div className='container-grid container-travel'>
                 <div>
-                    <h1 className='text-accent fs-500 ff-sans-cond uppercase letter-spacing-1'>We started in
-                        <span className='d-block fs-900 ff-serif text-white'>Atlanta, GA </span>
+                    <h1 className='text-accent fs-400 ff-sans-cond uppercase letter-spacing-1'>We started in
+                        <span className='d-block fs-700 ff-serif text-white travel-text'>Atlanta, GA </span>
                         and traveled </h1>
                 </div>
                 <div>
@@ -24,7 +24,7 @@ function Travel() {
                             1000,
                             'to Hot Springs, AR',
                             1000,
-                            'to Chickasaw National Park',
+                            'to Chickasaw Nation',
                             1000,
                             'to Oklahoma City, OK',
                             1000,
@@ -42,7 +42,7 @@ function Travel() {
                         wrapper="span"
                         cursor={false}
                         repeat={Infinity}
-                        className='d-block fs-900 ff-serif text-white uppercase' />
+                        className='d-block fs-700 ff-serif text-white uppercase travel-text' />
                 </div>
             </div>
             {/* Map container */}
