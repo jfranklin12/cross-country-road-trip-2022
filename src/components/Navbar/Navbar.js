@@ -32,7 +32,7 @@ function Navbar() {
                         <a className="ff-sans-cond uppercase text-white letter-spacing-2" href="/travel">travel</a>
                     </li>
                     <li>
-                        <a className="ff-sans-cond uppercase text-white letter-spacing-2" href="/destinations">Destinations</a>
+                        <a className="ff-sans-cond uppercase text-white letter-spacing-2" href="/visit">Visit</a>
                     </li>
                     <li>
                         <a className="ff-sans-cond uppercase text-white letter-spacing-2" href="/gallery">Gallery</a>

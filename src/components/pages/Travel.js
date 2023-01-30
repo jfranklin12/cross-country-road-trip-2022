@@ -10,39 +10,37 @@ function Travel() {
             {/* Visited Places Section */}
             <div className='container-grid container-travel'>
                 <div>
-                    <h1 className='text-accent fs-400 ff-sans-cond uppercase letter-spacing-1'>We started in
-                        <span className='d-block fs-700 ff-serif text-white travel-text'>Atlanta, GA </span>
+                    <h1 className='text-accent fs-500 ff-sans-cond uppercase letter-spacing-1 sm-travel-text'>We started in
+                        <span className='d-block fs-900 ff-serif text-white travel-text'>Atlanta, GA </span>
                         and traveled </h1>
                 </div>
                 <div>
                     
                     <TypeAnimation
                         sequence={[
-                            'to Birmingham, AL',
+                            'to Alabama',
                             1000,
-                            'to Tunica, MS',
+                            'to Mississippi',
                             1000,
-                            'to Hot Springs, AR',
+                            'to Arkansas',
                             1000,
-                            'to Chickasaw Nation',
+                            'to OKlahoma',
                             1000,
-                            'to Oklahoma City, OK',
+                            'to Texas',
                             1000,
-                            'to Albuquerque, NM',
+                            'to New Mexico',
                             1000,
-                            'to The Grand Canyon',
+                            'to Arizona',
                             1000,
-                            'to The Hoover Dam',
+                            'to Nevada',
                             1000,
-                            'to Las Vegas, NV',
-                            1000,
-                            'to Santa Barbara, CA',
+                            'to Califonia',
                             1000,
                         ]}
                         wrapper="span"
                         cursor={false}
                         repeat={Infinity}
-                        className='d-block fs-700 ff-serif text-white uppercase travel-text' />
+                        className='d-block fs-900 ff-serif text-white uppercase travel-text' />
                 </div>
             </div>
             {/* Map container */}

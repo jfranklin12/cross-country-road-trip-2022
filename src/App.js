@@ -3,7 +3,7 @@ import React, {useState, useEffect} from 'react';
 import Navbar from './components/Navbar/Navbar';
 import Homepage from './components/Homepage/Homepage';
 import Travel from "./components/pages/Travel";
-import Destinations from "./components/pages/Destinations";
+import Visit from "./components/pages/Visit";
 import Gallery from "./components/pages/Gallery";
 import More from "./components/pages/More";
 import Footer from './components/Footer';
@@ -20,8 +20,8 @@ function App() {
     case "/travel":
       component = <Travel />;
       break;
-    case "/destinations":
-      component = <Destinations />;
+    case "/visit":
+      component = <Visit />;
       break;
     case "/gallery":
       component = <Gallery />;
