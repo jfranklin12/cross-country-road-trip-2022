@@ -1,12 +1,16 @@
 import { MapContainer, TileLayer, useMap, Marker, Popup } from 'react-leaflet';
 import { TypeAnimation } from 'react-type-animation';
 import './travel.css';
+import locations from '../../data/locations';
 
 function Travel() {
 
-    const position = [33.753746, -84.386330]
+    const position = [33.753746, -84.386330];
+    console.log(locations);
+
     return (
         <div className='container'>
+            
             {/* Visited Places Section */}
             <div className='container-grid container-travel'>
                 <div>

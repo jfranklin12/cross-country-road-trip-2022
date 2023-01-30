@@ -39,7 +39,7 @@
 .primary-navigation.mobile{
     --underline-gap: .75rem;
     position: fixed;
-    z-index: 200;
+    z-index: 2000;
     inset: 0 0 0 30%;
     list-style: none;
     padding: min(20rem, 15vh) 1rem;
@@ -58,7 +58,7 @@
     position: absolute;
     right: 1rem;
     top: 2.5rem;
-    z-index: 300;
+    z-index: 2100;
     background: transparent;
     border: 0;
     margin: 0;
