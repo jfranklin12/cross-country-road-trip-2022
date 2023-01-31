@@ -4,26 +4,20 @@ import './travel.css';
 import locations from '../../data/locations';
 
 function Travel() {
-    // console.log(locations)
-    // const tripLines = [
-    //     [locations[0].location.lat, locations[0].location.lng],
-    //     [locations[1].location.lat, locations[1].location.lng],
-    // ];
-    // console.log(tripLines)
+
+    // empty array to get start and stop value for each polyline
     var start = [];
     var stop = [];
-
-    for (var i = 0; i < locations.length -1; i++) {
+    // all start locations
+    for (var i = 0; i < locations.length - 1; i++) {
         start.push([locations[i].location.lat, locations[i].location.lng]);
     }
+    // all stop locations
     for (var j = 1; j < locations.length; j++) {
         stop.push([locations[j].location.lat, locations[j].location.lng]);
     }
-    console.log(start);
-    console.log(stop);
-    
-
-    const position = [33, -100];
+    // initial position for map
+    const position = [34, -100];
 
     return (
         <div className='container'>
@@ -71,7 +65,7 @@ function Travel() {
 
                     <TileLayer attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
                         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
-
+                    {/* create marker and popup for each location */}
                     {locations.map(({ id, placeName, date, location }) => {
                         return (
                             <Marker key={id} position={[location.lat, location.lng]}>
@@ -79,14 +73,12 @@ function Travel() {
                                     {placeName} <br /> {date}
                                 </Popup>
                             </Marker>
-                        
+
                         )
                     })
                     }
-                    <Polyline pathOptions={ `color: 'blue'` } positions={[start, stop]} ></Polyline>
-                    
-
-
+                    {/* create polyline from each destination */}
+                    <Polyline pathOptions={`color: 'blue'`} positions={[start, stop]} ></Polyline>
 
                 </MapContainer>
             </div>
