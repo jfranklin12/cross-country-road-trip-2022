@@ -1,7 +1,9 @@
-import atlanta from "../../images/atlanta.JPEG"; 
+import atlanta from "../../images/atlanta.JPEG";
+import TabComponent from "../Tab.js"
+
 function Visit() {
     return (
-        <div className="grid-container">
+        <div className="">
             {/* main image for location */}
             <div>
                 <img atl="Atlanta, GA" src={atlanta}></img>
@@ -9,15 +11,7 @@ function Visit() {
             {/* state tabs */}
             <div>
                 {/* tabs */}
-                <div>
-                    <ul>
-                        <li>
-                        <a className="ff-sans-cond uppercase text-white letter-spacing-2" href="/">Georgia</a>
-                        </li>
-                    </ul>
-                    <h1>Georgia</h1>
-                    <p>info</p>
-                </div>
+                    <TabComponent />
             </div>
 
 

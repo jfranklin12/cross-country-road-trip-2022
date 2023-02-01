@@ -1,7 +1,7 @@
 const locations = [
     {
         id: 1,
-        placeName: 'Atlanta, GA',
+        placeName: 'Georgia',
         date: 'November 29, 2022',
         location: {
             lat: 33.753746,
