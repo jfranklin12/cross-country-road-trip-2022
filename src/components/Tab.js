@@ -7,13 +7,13 @@ import dayThree from "../data/dayThree";
 
 function TabComponent() {
     return (
-        <Tabs forceRenderTabPanel defaultIndex={1}>
+        <Tabs forceRenderTabPanel defaultIndex={1} className="tabs-info">
 
         {/* List of Days */}
-        <TabList>
+        <TabList className='text-white fs-600 ff-sans-cond uppercase letter-spacing-4 t-list'>
         {days.map(({ id, day }) => {
                     return (
-                        <Tab key={id}>
+                        <Tab key={id} className='tabs'>
                             {day}
                         </Tab>
                     )
@@ -23,10 +23,10 @@ function TabComponent() {
         {/* Day One Location tabs and information */}
         <TabPanel>
           <Tabs forceRenderTabPanel>
-            <TabList>
+            <TabList className='text-white fs-400 ff-sans-cond uppercase letter-spacing-5 t-list'>
             {dayOne.map(({ id, location}) => {
                             return (
-                                <Tab key= {id}>{location}</Tab>
+                                <Tab key= {id} classname='tabs'>{location}</Tab>
                             )
                         })}
             </TabList>

@@ -6,11 +6,33 @@
     padding: 1rem;
     border-radius: 4rem;
 }
-.tabs{
-    list-style-type: disc;
-    padding-inline: 1rem;
+.tabs-info {
+    padding: .25rem;
 }
-
+.t-list{
+    padding-inline: 1rem;
+    text-align: center;
+}
+.tabs {
+    display: inline-block;
+    border: 1px solid transparent;
+    border-bottom: none;
+    bottom: -1px;
+    position: relative;
+    list-style: none;
+    padding: 6px 12px;
+    cursor: pointer;
+    outline: none;
+}
+.react-tabs__tab--selected {
+    background: hsl( var(--clr-white));
+    border-color: #aaa;
+    color: hsl( var(--clr-dark));
+    border-radius: 1rem 1rem 0 0;
+}
+.react-tabs__tab-panel--selected {
+    display: block;
+}
 .visit-img {
     width: 30rem;
     margin-inline: auto;

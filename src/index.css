@@ -11,12 +11,12 @@
   /* font-sizes */
   --fs-900: clamp(5rem, 1vw + 1rem, 9.375rem);
   --fs-800: 3.5rem;
-  --fs-700: 1.5rem;
-  --fs-600: 1rem;
+  --fs-700: 2.5rem;
+  --fs-600: 2rem;
   --fs-500: 1.75rem;
-  --fs-400: 0.9375rem;
+  --fs-400: 1.25rem;
   --fs-300: 1rem;
-  --fs-200: 0.875rem;
+  --fs-200: 0.75rem;
   
   /* font-families */
   --ff-serif: "Bellefair", serif;
@@ -27,9 +27,9 @@
 @media (min-width: 35em) {
   :root {
       --fs-800: 5rem;
-      --fs-700: 2.5rem;
-      --fs-600: 1.5rem;
-      --fs-400: 1rem;
+      --fs-700: 3.5rem;
+      --fs-600: 2.5rem;
+      --fs-400: 1.5rem;
   }
 }
 
@@ -37,9 +37,9 @@
   :root {
       /* font-sizes */
       --fs-800: 6.25rem;
-      --fs-700: 3.5rem;
-      --fs-600: 2rem;
-      --fs-400: 1.125rem;
+      --fs-700: 4.5rem;
+      --fs-600: 3rem;
+      --fs-400: 2rem;
   }
 }
 
@@ -211,6 +211,9 @@ input, button, textarea, select, svg {
 .letter-spacing-1 { letter-spacing: 4.75px; } 
 .letter-spacing-2 { letter-spacing: 2.7px; } 
 .letter-spacing-3 { letter-spacing: 2.35px; } 
+.letter-spacing-4 { letter-spacing: 2px; } 
+.letter-spacing-5 { letter-spacing: 1.25px; }
+
 
 .uppercase { text-transform: uppercase; }
 
