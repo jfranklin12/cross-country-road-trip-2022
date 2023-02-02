@@ -6,7 +6,7 @@ import atlanta from "../images/atlanta.JPEG";
 
 function TabComponent() {
     return (
-        <Tabs>
+        <Tabs forceRenderTabPanel defaultIndex={1}>
             <TabList className="tabs ff-sans-cond uppercase text-white letter-spacing-3 fs-700">
                 {days.map(({ id, day }) => {
                     return (
@@ -17,21 +17,26 @@ function TabComponent() {
                 })}
             </TabList>
 
-
-            {dayOne.map(({ id, location, description, image }) => {
-                return (
-                    <TabPanel key={id} className="tabs-content">
-                        <h1>{location}</h1>
-                        <img alt="atlanta" src={image}></img>
-                        <p>{description}</p>
-                        
-
-                    </TabPanel>
-
-
-                )
-            })}
-
+            <TabPanel className="tabs-content">
+                <Tabs forceRenderTabPanel>
+                    <TabList>
+                        {dayOne.map(({ id, location, description, image }) => {
+                            return (
+                                <Tab key= {id}>{location}</Tab>
+                            )
+                        })}
+                    </TabList>
+                    {dayOne.map(({ id, stops, description, location, image}) => {
+                        return (
+                            <TabPanel key={id}>
+                                <h1>{stops}</h1>
+                                <img alt={location} src={image}/>
+                                <p>{description}</p>
+                            </TabPanel>
+                        )
+                    })}
+                </Tabs>
+            </TabPanel>
 
         </Tabs>
     )
