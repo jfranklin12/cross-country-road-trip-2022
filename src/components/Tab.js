@@ -18,7 +18,7 @@ function TabComponent() {
             </TabList>
 
 
-            {dayOne.map(({ id, date, location, description, image }) => {
+            {dayOne.map(({ id, location, description, image }) => {
                 return (
                     <TabPanel key={id} className="tabs-content">
                         <h1>{location}</h1>
