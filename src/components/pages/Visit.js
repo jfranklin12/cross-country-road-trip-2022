@@ -4,7 +4,7 @@ import "./Visit.css"
 
 function Visit() {
     return (
-        <div className="container">
+        <div className="grid-container">
             {/* main image for location */}
             <div className="container container-visit">
                 <h1 className='text-white fs-800 ff-serif uppercase letter-spacing-1'>Cross Country Road Trip</h1>

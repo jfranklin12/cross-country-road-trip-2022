@@ -1,21 +1,19 @@
+/* tabs containers */
 .container-visit {
-    padding-bottom: 2rem;
+    padding-bottom: 2.5rem;
 }
 .tabs-container {
     background-color: hsl( var(--clr-dark) / .5);
     padding: 1rem;
     border-radius: 4rem;
 }
-.tabs-info {
-    padding: .25rem;
-}
+
+/* tabs for days and states */
 .t-list{
-    padding-inline: 1rem;
-    text-align: center;
+    padding-inline: 0rem;
 }
 .tabs {
     display: inline-block;
-    /* border: 1px solid transparent; */
     border-bottom: .1rem solid hsl( var(--clr-light) / .5);
     bottom: -1px;
     position: relative;
@@ -38,11 +36,16 @@
 .react-tabs__tab-panel--selected {
     display: block;
 }
-.visit-img {
+
+/* tab content */
+.panel-title {
+    padding-top: 1rem;
+}
+.tab-img {
     width: 30rem;
     margin-inline: auto;
+    padding: 2rem;
 }
-
-.tabs-content {
-    padding-inline: 2rem;
+.para {
+    padding: 0 1rem 1.5rem 1rem;
 }
