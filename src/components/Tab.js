@@ -26,7 +26,7 @@ function TabComponent() {
             <TabList className='text-white fs-400 ff-sans-cond uppercase letter-spacing-5 t-list'>
             {dayOne.map(({ id, location}) => {
                             return (
-                                <Tab key= {id} classname='tabs'>{location}</Tab>
+                                <Tab key= {id} className='tabs'>{location}</Tab>
                             )
                         })}
             </TabList>

@@ -15,14 +15,19 @@
 }
 .tabs {
     display: inline-block;
-    border: 1px solid transparent;
-    border-bottom: none;
+    /* border: 1px solid transparent; */
+    border-bottom: .1rem solid hsl( var(--clr-light) / .5);
     bottom: -1px;
     position: relative;
     list-style: none;
     padding: 6px 12px;
     cursor: pointer;
     outline: none;
+}
+.react-tabs__tab-list {
+    border-bottom: 1px solid #aaa;
+    margin: 0 0 10px;
+    padding: 0;
 }
 .react-tabs__tab--selected {
     background: hsl( var(--clr-white));
