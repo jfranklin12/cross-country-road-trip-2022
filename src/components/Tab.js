@@ -1,31 +1,32 @@
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
-import locations from "../data/locations";
+import 'react-tabs/style/react-tabs.css';
+import days from "../data/days"
 
 function TabComponent() {
     return (
         <Tabs>
-            <TabList>
-            {locations.map(({ id, placeName }) => {
-                            return (
-                                <Tab key={id} className="ff-sans-cond uppercase text-white letter-spacing-2">
-                                    {placeName}
-                                </Tab>
-                            )
-                        })}
-            </TabList>
-
-            
-                {locations.map(({ id, date, description}) => {
+            <TabList className="tabs ff-sans-cond uppercase text-white letter-spacing-3 fs-700">
+                {days.map(({ id, day }) => {
                     return (
-                        <TabPanel>
-                            <h1>{date}</h1>
-
-                        </TabPanel>
-                        
-
+                        <Tab key={id}>
+                            {day}
+                        </Tab>
                     )
                 })}
-            
+            </TabList>
+
+
+            {days.map(({ id, date, description }) => {
+                return (
+                    <TabPanel key={id} className="tabs-content">
+                        <h1>{date}</h1>
+
+                    </TabPanel>
+
+
+                )
+            })}
+
 
         </Tabs>
     )

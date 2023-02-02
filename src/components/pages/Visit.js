@@ -1,12 +1,13 @@
 import atlanta from "../../images/atlanta.JPEG";
-import TabComponent from "../Tab.js"
+import TabComponent from "../Tab.js";
+import "./Visit.css"
 
 function Visit() {
     return (
-        <div className="">
+        <div className="container">
             {/* main image for location */}
-            <div>
-                <img atl="Atlanta, GA" src={atlanta}></img>
+            <div className="container">
+                <img alt="georgia" src={atlanta} className="visit-img"></img>
             </div>
             {/* state tabs */}
             <div>

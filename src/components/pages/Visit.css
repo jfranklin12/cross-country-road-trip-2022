@@ -1,0 +1,13 @@
+.tabs{
+    list-style-type: disc;
+    padding-inline: 1rem;
+}
+
+.visit-img {
+    width: 30rem;
+    margin-inline: auto;
+}
+
+.tabs-content {
+    padding-inline: 2rem;
+}
