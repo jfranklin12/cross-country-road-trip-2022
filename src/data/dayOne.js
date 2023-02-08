@@ -16,7 +16,7 @@ const dayOne = [
         date: 'November 29, 2022',
         location: 'Alabama',
         stops: 'Birmingham',
-        description: `Alabama information`,
+        description: `For those of you that have been to Alabama, you may know that there's not much to do. Birmingham was directly on our route, so we decided to make it our first stop. I had researched a bit about things to do in Birmingham, and found a great, old, historic park. When we pulled off the interstate, we found the roads difficult to navigate with the trailer. Birmingham is small and bumpy. We tried to find somewhere to park the trailer, but were unsuccessful. With a strom quickly approaching, we cut our losses and got back on the road. On the way back to the highway, we passed through a fun tunnel with lights and music! Not bad for a Tuesday afternoon. I'm sure there were other great things to do in this city, but for us, it was just a gas fill up and a quick break. Until next time!`,
         image: atlanta,
     },
     {
