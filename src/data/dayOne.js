@@ -25,7 +25,7 @@ const dayOne = [
         date: 'November 29, 2022',
         location: 'Mississippi',
         stops: 'Tunica',
-        description: `Mississippi information`,
+        description: `Our plan was to drive to Tunica, Mississippi as our final destination for the day. We were still racing the clock. The storm seemed to be settling over Mississippi and not moving. It was a hard last leg. We made it to Horseshoe Resort just before the worst part of the storm hit. We weren't sure what to expect, but Horseshoe Resort was a fine place to rest for the night. We explored the Casino and got a bite to eat. The food was excellent and the room was clean and modern. Tunica is a fun place to stop for the night, but the downside was that it ended up being a bit out of the way. Clear, cold skies greeted us in the morning as we began our adventure to Hot Springs, Arkansas.`,
         image: atlanta,
     },
     
