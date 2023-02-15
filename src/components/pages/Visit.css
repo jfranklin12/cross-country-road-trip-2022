@@ -3,7 +3,7 @@
     padding-bottom: 2.5rem;
 }
 .tabs-container {
-    background-color: hsl( var(--clr-dark) / .5);
+    /* background-color: hsl( var(--clr-dark) / .5); */
     padding: 1rem;
     border-radius: 4rem;
 }
