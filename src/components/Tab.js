@@ -45,7 +45,7 @@ function TabComponent() {
             {/* Day Two Location Tabs and information */}
             <TabPanel>
                 <Tabs forceRenderTabPanel>
-                    <TabList>
+                    <TabList className='text-white fs-400 ff-sans-cond uppercase letter-spacing-5 t-list'>
                         {dayTwo.map(({ id, location }) => {
                             return (
                                 <Tab key={id} className='tabs'>{location}</Tab>
@@ -67,19 +67,22 @@ function TabComponent() {
             {/* Day Three Location Tabs and information */}
             <TabPanel>
                 <Tabs forceRenderTabPanel>
-                    <TabList>
+                    <TabList className='text-white fs-400 ff-sans-cond uppercase letter-spacing-5 t-list'>
                         {dayThree.map(({ id, location }) => {
                             return (
-                                <Tab key={id}>{location}</Tab>
+                                <Tab key={id} className='tabs'>{location}</Tab>
                             )
                         })}
                     </TabList>
-                    {dayThree.map(({ id, stops, description, location, image }) => {
+                    {dayThree.map(({ id, stop, description, location, image, stopTwo, imageTwo, descriptionTwo }) => {
                         return (
                             <TabPanel key={id}>
-                                <h1>{stops}</h1>
-                                <img alt={location} src={image} />
-                                <p>{description}</p>
+                                <h1 className="fs-700 ff-serif uppercase letter-spacing-1 panel-title">{stop}</h1>
+                                <img alt={stop} src={image} className="tab-img" />
+                                <p className="letter-spacing-4 para">{description}</p>
+                                <h1 className="fs-700 ff-serif uppercase letter-spacing-1 panel-title">{stopTwo}</h1>
+                                <img alt={stopTwo} src={imageTwo} className="tab-img" />
+                                <p className="letter-spacing-4 para">{descriptionTwo}</p>
                             </TabPanel>
                         )
                     })}
