@@ -30,10 +30,10 @@ function TabComponent() {
                             )
                         })}
                     </TabList>
-                    {dayOne.map(({ id, stops, description, location, image }) => {
+                    {dayOne.map(({ id, stop, description, location, image }) => {
                         return (
                             <TabPanel key={id}>
-                                <h1 className="fs-700 ff-serif uppercase letter-spacing-1 panel-title">{stops}</h1>
+                                <h1 className="fs-700 ff-serif uppercase letter-spacing-1 panel-title">{stop}</h1>
                                 <img alt={location} src={image} className="tab-img" />
                                 <p className="letter-spacing-4 para">{description}</p>
                             </TabPanel>
@@ -52,10 +52,10 @@ function TabComponent() {
                             )
                         })}
                     </TabList>
-                    {dayTwo.map(({ id, stops, description, location, image }) => {
+                    {dayTwo.map(({ id, stop, description, location, image }) => {
                         return (
                             <TabPanel key={id}>
-                                <h1 className="fs-700 ff-serif uppercase letter-spacing-1 panel-title">{stops}</h1>
+                                <h1 className="fs-700 ff-serif uppercase letter-spacing-1 panel-title">{stop}</h1>
                                 <img alt={location} src={image} className="tab-img" />
                                 <p className="letter-spacing-4 para">{description}</p>
                             </TabPanel>
