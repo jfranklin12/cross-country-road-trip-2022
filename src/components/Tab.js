@@ -74,15 +74,18 @@ function TabComponent() {
                             )
                         })}
                     </TabList>
-                    {dayThree.map(({ id, stop, description, location, image, stopTwo, imageTwo, descriptionTwo }) => {
+                    {dayThree.map(({ id, stopOne, descriptionOne, location, imageOne, stopTwo, imageTwo, descriptionTwo, stopThree, imageThree, descriptionThree }) => {
                         return (
                             <TabPanel key={id}>
-                                <h1 className="fs-700 ff-serif uppercase letter-spacing-1 panel-title">{stop}</h1>
-                                <img alt={stop} src={image} className="tab-img" />
-                                <p className="letter-spacing-4 para">{description}</p>
+                                <h1 className="fs-700 ff-serif uppercase letter-spacing-1 panel-title">{stopOne}</h1>
+                                <img alt={stopOne} src={imageOne} className="tab-img" />
+                                <p className="letter-spacing-4 para">{descriptionOne}</p>
                                 <h1 className="fs-700 ff-serif uppercase letter-spacing-1 panel-title">{stopTwo}</h1>
                                 <img alt={stopTwo} src={imageTwo} className="tab-img" />
                                 <p className="letter-spacing-4 para">{descriptionTwo}</p>
+                                <h1 className="fs-700 ff-serif uppercase letter-spacing-1 panel-title">{stopThree}</h1>
+                                <img alt={stopThree} src={imageThree} className="tab-img" />
+                                <p className="letter-spacing-4 para">{descriptionThree}</p>
                             </TabPanel>
                         )
                     })}
