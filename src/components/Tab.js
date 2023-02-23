@@ -33,8 +33,10 @@ function TabComponent() {
                     {dayOne.map(({ id, stop, description, location, image }) => {
                         return (
                             <TabPanel key={id}>
-                                <h1 className="fs-700 ff-serif uppercase letter-spacing-1 panel-title">{stop}</h1>
+                                {/* <div className="img-container"> */}
                                 <img alt={location} src={image} className="tab-img" />
+                                <h1 className="fs-700 ff-sans uppercase letter-spacing-1 panel-title">{stop}</h1>
+                                {/* </div> */}
                                 <p className="letter-spacing-4 para">{description}</p>
                             </TabPanel>
                         )
