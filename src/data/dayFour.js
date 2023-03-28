@@ -25,7 +25,7 @@ const dayFour = [
         date: 'December 2, 2022',
         location: 'Arizona',
 
-        stopOne: 'Arizona Border',
+        stopOne: 'Border',
         descriptionOne: `Pit Stop`,
         imageOne: atlanta,
 

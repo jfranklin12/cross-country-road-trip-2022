@@ -31,6 +31,7 @@ const daySix = [
 
         stopTwo: 'Bakersfield',
         descriptionTwo: `Hotel`,
+        imageTwo: atlanta
     },
       
         
