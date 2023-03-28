@@ -20,7 +20,7 @@ const dayFour = [
         imageThree: atlanta,
     },
     {
-        id: 1,
+        id: 2,
         day: 'Day 4',
         date: 'December 2, 2022',
         location: 'Arizona',
