@@ -61,10 +61,10 @@
     left: -.5rem;
 }
 .tab-img {
-    width: 30rem;
-    margin-inline: auto;
-    padding: 2rem;
-    /* border-radius: 4rem; */
+    width: 20rem;
+    margin: 3rem auto;
+    border: 1.4rem solid white;
+    border-bottom: 4.5rem solid white;
 }
 .para {
     padding: 0 1rem 1.5rem 1rem;
