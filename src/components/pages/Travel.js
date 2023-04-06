@@ -60,7 +60,7 @@ function Travel() {
                 </div>
             </div>
             {/* Map container */}
-            <div className='container'>
+            <div className='container container-map'>
                 <MapContainer id="map" center={position} zoom={5} scrollWheelZoom={false}>
 
                     <TileLayer attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'

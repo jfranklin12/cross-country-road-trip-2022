@@ -1,5 +1,6 @@
 .container-travel {
     text-align: center;
+    padding: 2rem 0;
 }
 
 #map {
@@ -33,9 +34,13 @@ margin-top: 3rem;
 }
 
 @media (max-width: 31rem) {
+    .container-map {
+        display: flex;
+        justify-content: center;
+    }
     #map {
-        width: 16.5rem;
-        margin-top: 1.5rem;
+        width: 16rem;
+        margin: 3rem 0 12em 0;
     }
 
 }

@@ -50,6 +50,8 @@
 /* box sizing */
 *, *::before, *::after {
   box-sizing: border-box;
+  /* To see item position as needed */
+  /* outline: solid 1px red; */
 }
 
 /* reset margins */
