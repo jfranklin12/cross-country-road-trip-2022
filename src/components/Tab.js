@@ -39,7 +39,7 @@ function TabComponent() {
                             <TabPanel key={id}>
                                 <div className="img-container">
                                     <img alt={location} src={image} className="tab-img" />
-                                    <h1 className="fs-800 ff-sans uppercase letter-spacing-1 panel-title text-dark">{stop}</h1>
+                                    <h1 className="fs-700 ff-sans uppercase letter-spacing-1 panel-title text-dark">{stop}</h1>
                                 </div>
                                 <p className="letter-spacing-4 para fs-300">{description}</p>
                             </TabPanel>

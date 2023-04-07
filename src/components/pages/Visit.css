@@ -37,19 +37,19 @@
 
 /* tab content */
 .img-container {
-    transform: rotate(2.5deg);
+    transform: rotate(3deg);
 }
 .panel-title {
     font-weight: bold;
     position: relative;
-    bottom: 4rem;
+    bottom: 3.5rem;
 }
 .tab-img {
-    width: 20rem;
+    width: 15.5rem;
     margin-inline: auto;
     margin-top: 1.75rem;
-    border: 1.4rem solid white;
-    border-bottom: 4.5rem solid white;
+    border: 1.25rem solid white;
+    border-bottom: 4.25rem solid white;
     box-shadow: 1rem 1rem 1.5rem hsl( var(--clr-dark));
 }
 .para {
