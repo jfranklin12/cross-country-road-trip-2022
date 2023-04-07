@@ -1,8 +1,9 @@
-.container-travel {
-    text-align: center;
-    padding: 2rem 0;
+.grid-container--travel {
+    line-height: 2;
+    min-height: 95vh;
+    padding-top: 1rem;
+    padding-bottom: 5em;
 }
-
 .container-map {
     padding-inline: 0;
     display: flex;
@@ -10,6 +11,11 @@
 }
 
 #map {
+    height: 13rem;
+    width: 15rem;
+}
+
+/* #map {
 height: 36rem;
 width: 64rem;
 margin: 3rem 0 12em 0;
@@ -69,4 +75,4 @@ margin: 3rem 0 12em 0;
         height: 13rem;
         width: 15rem;
     }
-}
+} */

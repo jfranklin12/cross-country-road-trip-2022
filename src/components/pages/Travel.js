@@ -20,17 +20,17 @@ function Travel() {
     const position = [34, -100];
 
     return (
-        <div className='container'>
+        <div className='grid-container grid-container--travel'>
 
             {/* Visited Places Section */}
-            <div className='container-grid container-travel'>
+            
                 <div>
-                    <h1 className='text-accent fs-500 ff-sans-cond uppercase letter-spacing-1 sm-travel-text'>We started in
-                        <span className='d-block fs-900 ff-serif text-white travel-text'>Atlanta, GA </span>
+                    <h1 className='text-accent fs-400 ff-sans-cond uppercase letter-spacing-1 sm-travel-text'>We started in
+                        <span className='d-block fs-600 ff-serif text-white travel-text'>Atlanta, GA </span>
                         and traveled </h1>
-                </div>
+                
                 {/* Traveled States Loop */}
-                <div>
+                
 
                     <TypeAnimation
                         sequence={[
@@ -56,9 +56,8 @@ function Travel() {
                         wrapper="span"
                         cursor={false}
                         repeat={Infinity}
-                        className='d-block fs-900 ff-serif text-white uppercase travel-text' />
+                        className='d-block fs-600 ff-serif text-white uppercase travel-text' />
                 </div>
-            </div>
             {/* Map container */}
             <div className='container container-map'>
                 <MapContainer id="map" center={position} zoom={5} scrollWheelZoom={false}>
