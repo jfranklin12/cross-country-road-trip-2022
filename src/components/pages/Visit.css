@@ -1,10 +1,9 @@
-/* tabs containers */
-.container-visit {
-    padding-bottom: 2.5rem;
-}
+/* tabs container */
 .tabs-container {
-    padding: 1rem;
+    padding-inline: .5rem;
+    margin-top: 1.5rem;
     border-radius: 4rem;
+    background:hsl( var(--clr-light) / .2);
 }
 
 /* tabs for days and states */
@@ -37,34 +36,21 @@
 }
 
 /* tab content */
-/* .img-container{
-    position: relative;
-} */
+.img-container {
+    transform: rotate(2.5deg);
+}
 .panel-title {
     font-weight: bold;
-    text-shadow:
-        0 1px 0 #ccc,
-        0 2px 0 #c9c9c9,
-        0 3px 0 #bbb,
-        0 4px 0 #b9b9b9,
-        0 5px 0 #aaa,
-        0 6px 1px rgba(0,0,0,.1),
-        0 0 5px rgba(0,0,0,.1),
-        0 1px 3px rgba(0,0,0,.3),
-        0 3px 5px rgba(0,0,0,.2),
-        0 5px 10px rgba(0,0,0,.25),
-        0 10px 10px rgba(0,0,0,.2),
-        0 20px 20px rgba(0,0,0,.15);
-    padding-bottom: 1.5rem;
-    /* position: absolute; */
-    bottom: 1rem;
-    left: -.5rem;
+    position: relative;
+    bottom: 4rem;
 }
 .tab-img {
     width: 20rem;
-    margin: 3rem auto;
+    margin-inline: auto;
+    margin-top: 1.75rem;
     border: 1.4rem solid white;
     border-bottom: 4.5rem solid white;
+    box-shadow: 1rem 1rem 1.5rem hsl( var(--clr-dark));
 }
 .para {
     padding: 0 1rem 1.5rem 1rem;

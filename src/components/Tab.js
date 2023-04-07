@@ -14,7 +14,7 @@ function TabComponent() {
         <Tabs forceRenderTabPanel defaultIndex={1}>
 
             {/* List of Days */}
-            <TabList className='text-white fs-600 ff-sans-cond uppercase letter-spacing-4 t-list'>
+            <TabList className='text-white fs-500 ff-sans-cond uppercase letter-spacing-4 t-list'>
                 {days.map(({ id, day }) => {
                     return (
                         <Tab key={id} className='tabs'>
@@ -27,7 +27,7 @@ function TabComponent() {
             {/* Day One Location tabs and information */}
             <TabPanel>
                 <Tabs forceRenderTabPanel>
-                    <TabList className='text-white fs-400 ff-sans-cond uppercase letter-spacing-5 t-list'>
+                    <TabList className='text-white fs-300 ff-sans-cond uppercase letter-spacing-5 t-list'>
                         {dayOne.map(({ id, location }) => {
                             return (
                                 <Tab key={id} className='tabs'>{location}</Tab>
@@ -38,10 +38,10 @@ function TabComponent() {
                         return (
                             <TabPanel key={id}>
                                 <div className="img-container">
-                                <img alt={location} src={image} className="tab-img" />
-                                <h1 className="fs-700 ff-sans uppercase letter-spacing-1 panel-title">{stop}</h1>
+                                    <img alt={location} src={image} className="tab-img" />
+                                    <h1 className="fs-800 ff-sans uppercase letter-spacing-1 panel-title text-dark">{stop}</h1>
                                 </div>
-                                <p className="letter-spacing-4 para">{description}</p>
+                                <p className="letter-spacing-4 para fs-300">{description}</p>
                             </TabPanel>
                         )
                     })}
