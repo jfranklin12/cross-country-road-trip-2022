@@ -1,6 +1,11 @@
 /* ----------------- */
 /* homepage        */
 /* ----------------- */
+.grid-container--home {
+    padding-bottom: max(7rem, 18vh);
+    align-items: end;
+  }
+
 
 /* travel button */
 .large-button {
@@ -32,8 +37,13 @@
     transform: scale(1.5);
 }
 
-@media (min-width: 48em) {
+/* @media (max-width: 48em) {
 .align-right {
     justify-self: right;
 }
-}
+.grid-container--home {
+    padding-bottom: max(5rem, 15vh);
+    align-items: end;
+    min-height: 150vh;
+  }
+} */
