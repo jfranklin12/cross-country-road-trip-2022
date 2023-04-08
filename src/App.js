@@ -1,14 +1,14 @@
 import './App.css';
 import React, {useState, useEffect} from 'react';
-import Navbar from './components/Navbar/Navbar';
-import Homepage from './components/Homepage/Homepage';
-import Travel from "./components/pages/Travel";
-import Visit from "./components/pages/Visit";
-import Gallery from "./components/pages/Gallery";
-import More from "./components/pages/More";
-import Footer from './components/Footer';
-import backgroundDesktop from './images/background-grand-canyon.JPEG';
-import backgroundMobile from './images/background-mobile.JPEG';
+import Navbar from 'components/Navbar/Navbar';
+import Homepage from 'components/Homepage/Homepage';
+import Travel from 'components/Pages/Travel'
+import Visit from "components/Pages/Visit";
+import Gallery from "components/Pages/Gallery.js";
+import More from "components/Pages/More.js";
+import Footer from 'components/Footer';
+import backgroundDesktop from 'images/background-grand-canyon.JPEG';
+import backgroundMobile from 'images/background-mobile.JPEG';
 
 function App() {
 

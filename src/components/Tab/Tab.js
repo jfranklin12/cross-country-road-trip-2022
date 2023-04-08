@@ -1,13 +1,13 @@
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 import 'react-tabs/style/react-tabs.css';
-import days from "../data/days";
-import dayOne from "../data/dayOne";
-import dayTwo from "../data/dayTwo";
-import dayThree from "../data/dayThree";
-import dayFour from "../data/dayFour";
-import dayFive from "../data/dayFive";
-import daySix from "../data/daySix";
-import daySeven from "../data/daySeven";
+import days from "data/days";
+import dayOne from "data/dayOne";
+import dayTwo from "data/dayTwo";
+import dayThree from "data/dayThree";
+import dayFour from "data/dayFour";
+import dayFive from "data/dayFive";
+import daySix from "data/daySix";
+import daySeven from "data/daySeven";
 
 function TabComponent() {
     return (
@@ -34,14 +34,14 @@ function TabComponent() {
                             )
                         })}
                     </TabList>
-                    {dayOne.map(({ id, stop, description, location, image }) => {
+                    {dayOne.map(({ id, stop, description, image }) => {
                         return (
                             <TabPanel key={id}>
                                 <div className="img-container">
-                                    <img alt={location} src={image} className="tab-img" />
-                                    <h1 className="fs-700 ff-sans uppercase letter-spacing-1 panel-title text-dark">{stop}</h1>
+                                    <img alt={stop} src={image} className="tab-img" />
+                                    <h1 className="fs-600 ff-sans uppercase letter-spacing-2 panel-title text-dark">{stop}</h1>
                                 </div>
-                                <p className="letter-spacing-4 para fs-300">{description}</p>
+                                <p className="letter-spacing-5 para fs-300">{description}</p>
                             </TabPanel>
                         )
                     })}
@@ -58,12 +58,15 @@ function TabComponent() {
                             )
                         })}
                     </TabList>
-                    {dayTwo.map(({ id, stop, description, location, image }) => {
+                    {dayTwo.map(({ id, stop, description, image }) => {
                         return (
                             <TabPanel key={id}>
-                                <h1 className="fs-700 ff-serif uppercase letter-spacing-1 panel-title">{stop}</h1>
-                                <img alt={location} src={image} className="tab-img" />
-                                <p className="letter-spacing-4 para">{description}</p>
+                                <div className="img-container">
+                                    <img alt={stop} src={image} className="tab-img" />
+                                    <h1 className="fs-600 ff-sans uppercase letter-spacing-2 panel-title text-dark">{stop}</h1>
+                                </div>
+                                <p className="letter-spacing-5 para fs-300">{description}</p>
+
                             </TabPanel>
                         )
                     })}
@@ -80,18 +83,32 @@ function TabComponent() {
                             )
                         })}
                     </TabList>
-                    {dayThree.map(({ id, stopOne, descriptionOne, location, imageOne, stopTwo, imageTwo, descriptionTwo, stopThree, imageThree, descriptionThree }) => {
+                    {dayThree.map(({ id, stopOne, descriptionOne, imageOne, stopTwo, imageTwo, descriptionTwo, stopThree, imageThree, descriptionThree }) => {
                         return (
                             <TabPanel key={id}>
-                                <h1 className="fs-700 ff-serif uppercase letter-spacing-1 panel-title">{stopOne}</h1>
-                                <img alt={stopOne} src={imageOne} className="tab-img" />
-                                <p className="letter-spacing-4 para">{descriptionOne}</p>
-                                <h1 className="fs-700 ff-serif uppercase letter-spacing-1 panel-title">{stopTwo}</h1>
-                                <img alt={stopTwo} src={imageTwo} className="tab-img" />
-                                <p className="letter-spacing-4 para">{descriptionTwo}</p>
-                                <h1 className="fs-700 ff-serif uppercase letter-spacing-1 panel-title">{stopThree}</h1>
-                                <img alt={stopThree} src={imageThree} className="tab-img" />
-                                <p className="letter-spacing-4 para">{descriptionThree}</p>
+
+                                {/* first stop for each state Day 3*/}
+                                <div className="img-container">
+                                    <img alt={stopOne} src={imageOne} className="tab-img" />
+                                    <h1 className="fs-600 ff-sans uppercase letter-spacing-2 panel-title text-dark">{stopOne}</h1>
+                                </div>
+                                <p className="letter-spacing-5 para fs-300">{descriptionOne}</p>
+
+                                {/* second stop for each state Day 3*/}
+                                <div className="img-container">
+                                    <img alt={stopTwo} src={imageTwo} className="tab-img" />
+                                    {/* Decide how to fix this header for O.K. */}
+                                    <h1 className="fs-600 ff-sans uppercase letter-spacing-2 panel-title text-dark lg-panel-title">{stopTwo}</h1>
+                                </div>
+                                <p className="letter-spacing-5 para fs-300">{descriptionTwo}</p>
+
+                                {/* third stop for each state Day 3*/}
+                                <div className="img-conatiner">
+                                    <img alt={stopThree} src={imageThree} />
+                                    <h1 className="fs-600 ff-sans uppercase letter-spacing-2 panel-title text-dark">{stopThree}</h1>
+                                </div>
+                                <p className="letter-spacing-5 para fs-300">{descriptionThree}</p>
+
                             </TabPanel>
                         )
                     })}
@@ -111,13 +128,13 @@ function TabComponent() {
                     {dayFour.map(({ id, stopOne, descriptionOne, location, imageOne, stopTwo, imageTwo, descriptionTwo, stopThree, imageThree, descriptionThree }) => {
                         return (
                             <TabPanel key={id}>
-                                <h1 className="fs-700 ff-serif uppercase letter-spacing-1 panel-title">{stopOne}</h1>
+                                <h1 className="fs-700 ff-sans uppercase letter-spacing-1 panel-title text-dark">{stopOne}</h1>
                                 <img alt={stopOne} src={imageOne} className="tab-img" />
                                 <p className="letter-spacing-4 para">{descriptionOne}</p>
-                                <h1 className="fs-700 ff-serif uppercase letter-spacing-1 panel-title">{stopTwo}</h1>
+                                <h1 className="fs-700 ff-sans uppercase letter-spacing-1 panel-title text-dark">{stopTwo}</h1>
                                 <img alt={stopTwo} src={imageTwo} className="tab-img" />
                                 <p className="letter-spacing-4 para">{descriptionTwo}</p>
-                                <h1 className="fs-700 ff-serif uppercase letter-spacing-1 panel-title">{stopThree}</h1>
+                                <h1 className="fs-700 ff-sans uppercase letter-spacing-1 panel-title text-dark">{stopThree}</h1>
                                 <img alt={stopThree} src={imageThree} className="tab-img" />
                                 <p className="letter-spacing-4 para">{descriptionThree}</p>
                             </TabPanel>
@@ -139,7 +156,7 @@ function TabComponent() {
                     {dayFive.map(({ id, stopOne, descriptionOne, location, imageOne }) => {
                         return (
                             <TabPanel key={id}>
-                                <h1 className="fs-700 ff-serif uppercase letter-spacing-1 panel-title">{stopOne}</h1>
+                                <h1 className="fs-700 ff-sans uppercase letter-spacing-1 panel-title text-dark">{stopOne}</h1>
                                 <img alt={stopOne} src={imageOne} className="tab-img" />
                                 <p className="letter-spacing-4 para">{descriptionOne}</p>
                             </TabPanel>
@@ -161,7 +178,7 @@ function TabComponent() {
                     {daySix.map(({ id, stopOne, descriptionOne, location, imageOne, stopTwo, imageTwo, descriptionTwo, stopThree, imageThree, descriptionThree }) => {
                         return (
                             <TabPanel key={id}>
-                                <h1 className="fs-700 ff-serif uppercase letter-spacing-1 panel-title">{stopOne}</h1>
+                                <h1 className="fs-700 ff-sans uppercase letter-spacing-1 panel-title text-dark">{stopOne}</h1>
                                 <img alt={stopOne} src={imageOne} className="tab-img" />
                                 <p className="letter-spacing-4 para">{descriptionOne}</p>
                                 <h1 className="fs-700 ff-serif uppercase letter-spacing-1 panel-title">{stopTwo}</h1>
@@ -179,7 +196,7 @@ function TabComponent() {
             {/* Day Seven Location Tabs and Information */}
             <TabPanel>
                 <Tabs forceRenderTabPanel>
-                    <TabList className='text-white fs-400 ff-sans-cond uppercase letter-spacing-5 t-list'>
+                    <TabList className='fs-700 ff-sans uppercase letter-spacing-1 panel-title text-dark'>
                         {daySeven.map(({ id, location }) => {
                             return (
                                 <Tab key={id} className='tabs'>{location}</Tab>

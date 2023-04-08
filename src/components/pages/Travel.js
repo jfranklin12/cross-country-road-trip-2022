@@ -1,7 +1,7 @@
 import { MapContainer, TileLayer, useMap, Marker, Popup, Polyline, FeatureGroup } from 'react-leaflet';
 import { TypeAnimation } from 'react-type-animation';
 import './travel.css';
-import locations from '../../data/locations';
+import locations from 'data/locations';
 
 function Travel() {
 

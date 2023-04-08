@@ -1,5 +1,5 @@
 import './navbar.css';
-import logo from "../../images/logo.png";
+import logo from "images/logo.png";
 import { useState } from 'react';
 import { FiMenu, FiX } from 'react-icons/fi';
 

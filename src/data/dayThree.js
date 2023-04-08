@@ -7,7 +7,7 @@ const dayThree = [
         date: 'December 1, 2022',
         location: 'Oklahoma',
 
-        stopOne: 'Chickasaw National Park',
+        stopOne: 'Chickasaw',
         descriptionOne: `Chickasaw National Recreation Area is only about an hour and half from Atoka. So off we went! Our destination was the Bison Pasture Viewpoint. Just before the park is a coffee shop called "Donut Palace". We picked up a coffee and continued to the viewpoint. The bison were eating when we got there! We were so excited that they were so close and really easy to see. We took a quick stroll along the hiking path and snagged a few pictures. There was lots to do, but our day was booked with driving, so we got back in our cars and started off to Oklahoma City.`,
         imageOne: atlanta,
 
@@ -15,7 +15,7 @@ const dayThree = [
         descriptionTwo: `Oklahoma City was a great place to stop. We were able to park the trailer on the outside of town and take the Civic to explore. We stopped at a delicious Mexican restaurant for a quick bite, and explored some of the boutiques that are all around the city. It wouldn't be a trip to Oklahoma City without stopping by Toby Keith's bar and restaurant! We popped in to see his place, and off we went!`,
         imageTwo: atlanta,
 
-        stopThree: 'Red Rock Canyon',
+        stopThree: 'Red Rock',
         descriptionThree: `Red Rock Canyon is a state park about an hour drive from Oklahoma City. It was a cool, crisp, windy day, but we still wanted to check out this place! We got our picture in the beautiful canyon, and got back on our way.`,
         imageThree: atlanta,
     },

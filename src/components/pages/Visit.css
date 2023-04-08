@@ -42,10 +42,13 @@
 .panel-title {
     font-weight: bold;
     position: relative;
-    bottom: 3.5rem;
+    bottom: 3rem;
+}
+.lg-panel-title {
+    letter-spacing: .4px;
 }
 .tab-img {
-    width: 15.5rem;
+    width: 15.4rem;
     margin-inline: auto;
     margin-top: 1.75rem;
     border: 1.25rem solid white;
