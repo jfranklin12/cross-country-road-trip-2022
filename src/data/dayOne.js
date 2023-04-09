@@ -1,5 +1,6 @@
-import atlanta from "../images/dayOne/atlanta.JPEG";
+import atlanta from "../images/dayOne/atlanta.JPEG"
 import alabama from "../images/dayOne/alabama.JPEG";
+
 
 const dayOne = [
     {
@@ -31,6 +32,5 @@ const dayOne = [
     },
     
 ];
-
 
 export default dayOne;

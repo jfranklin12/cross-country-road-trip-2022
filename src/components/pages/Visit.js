@@ -1,4 +1,4 @@
-import TabComponent from "../Tab/Tab.js";
+import TabComponent from "../tab/Tab.js";
 import "./Visit.css"
 
 function Visit() {
