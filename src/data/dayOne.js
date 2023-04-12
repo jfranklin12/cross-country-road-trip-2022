@@ -1,6 +1,7 @@
-import atlanta from "../images/dayOne/atlanta.JPEG"
+import atlanta from "../images/dayOne/atlanta.jpg";
 import alabama from "../images/dayOne/alabama.JPEG";
 
+console.log(atlanta)
 
 const dayOne = [
     {

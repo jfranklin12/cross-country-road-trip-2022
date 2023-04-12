@@ -10,6 +10,7 @@ import Footer from 'components/Footer';
 import backgroundDesktop from 'images/background-grand-canyon.JPEG';
 import backgroundMobile from 'images/background-mobile.JPEG';
 
+
 function App() {
 
   let component

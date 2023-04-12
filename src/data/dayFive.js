@@ -1,4 +1,4 @@
-import atlanta from "../images/dayOne/atlanta.JPEG";
+import atlanta from "../images/dayOne/atlanta.jpg";
 
 const dayFive = [
     {
